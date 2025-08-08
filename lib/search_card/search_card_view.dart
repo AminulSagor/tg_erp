@@ -50,6 +50,8 @@ class SearchCardView extends StatelessWidget {
                       Text("Amount: ${card['amount']} TK"),
                       Text("Expiry: ${formatDate(card['expiry'])}"),
                       Text("Used: ${card['used'] == true ? 'Yes' : 'No'}"),
+                      Text("Created At: ${formatDate(card['created_at'])}"),
+
                     ],
                   ),
                   trailing: card['used'] == true
